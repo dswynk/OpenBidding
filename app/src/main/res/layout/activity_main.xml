@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingTop="50dp">
 
     <EditText
         android:id="@+id/etAdUnit"
@@ -26,6 +27,7 @@
         />
 
     <com.google.android.gms.ads.nativead.NativeAdView
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/etAdUnitInterstitial"
         android:id="@+id/nativeAdView"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +39,14 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"/>
     </com.google.android.gms.ads.nativead.NativeAdView>
+
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@id/etAdUnitInterstitial"
+        android:id="@+id/programaticAdView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <Button
         app:layout_constraintStart_toStartOf="parent"

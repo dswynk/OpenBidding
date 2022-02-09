@@ -4,14 +4,6 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        release {
-            storeFile file('/Users/b0223914-07/Desktop/Untitled')
-            storePassword 'facebook'
-            keyAlias 'facebook'
-            keyPassword 'facebook'
-        }
-    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -29,7 +21,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
             debuggable true
         }
     }
