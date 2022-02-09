@@ -46,7 +46,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:20.4.0'
     implementation 'com.google.ads.mediation:facebook:6.7.0.0'
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2"
-    implementation 'com.google.ads.mediation:inmobi:9.2.1.0'
+//    implementation 'com.google.ads.mediation:inmobi:9.2.1.0'
 //    implementation 'com.inmobi.monetization:inmobi-ads:9.2.1'
     implementation 'com.google.android.ads:mediation-test-suite:2.0.0'
 
