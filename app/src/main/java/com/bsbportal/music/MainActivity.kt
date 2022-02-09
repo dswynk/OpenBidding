@@ -131,7 +131,30 @@ class MainActivity : AppCompatActivity() {
             )
             .build()
 
-        adLoader.loadAd(AdManagerAdRequest.Builder().build())
+        adLoader.loadAd(AdRequest.Builder().build())
+
+//        val adUnit = etAdUnit.text.toString().trim()
+//        val adView = AdView(this)
+//        adView.apply {
+//            this.adUnitId = adUnit
+//            this.adSize = AdSize.BANNER
+//            this.adListener = object: AdListener() {
+//                override fun onAdLoaded() {
+//                    super.onAdLoaded()
+//                    Toast.makeText(this@MainActivity, "Ad Loaded: $adUnit", Toast.LENGTH_SHORT).show()
+//
+//                    programaticView.removeAllViews()
+//                    programaticView.addView(adView)
+//                }
+//
+//                override fun onAdFailedToLoad(p0: LoadAdError) {
+//                    super.onAdFailedToLoad(p0)
+//                    Toast.makeText(this@MainActivity, "Ad failed: ${p0.message}", Toast.LENGTH_SHORT).show()
+//                }
+//            }
+//        }
+//
+//        adView.loadAd(AdRequest.Builder().build())
     }
 
     fun getGoogleAdvertisingId(context: Context): String? {
